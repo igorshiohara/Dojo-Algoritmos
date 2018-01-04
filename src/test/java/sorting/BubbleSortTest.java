@@ -1,11 +1,11 @@
 package sorting;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.Arrays;
 import java.util.Comparator;
 
-import static org.junit.Assert.assertArrayEquals;
 
 public class BubbleSortTest {
 
@@ -17,7 +17,7 @@ public class BubbleSortTest {
         Integer[] input = new Integer[]{};
 
         bubbleSort.sort(input);
-        assertArrayEquals(new Integer[]{}, input);
+        Assert.assertArrayEquals(new Integer[]{}, input);
     }
 
     @Test
@@ -28,7 +28,7 @@ public class BubbleSortTest {
         Integer[] input = new Integer[]{1};
 
         bubbleSort.sort(input);
-        assertArrayEquals(new Integer[]{1}, input);
+        Assert.assertArrayEquals(new Integer[]{1}, input);
     }
 
     @Test
@@ -39,7 +39,7 @@ public class BubbleSortTest {
         Integer[] input = new Integer[]{5,4,3,2,1};
 
         bubbleSort.sort(input);
-        assertArrayEquals(new Integer[]{1, 2, 3, 4, 5}, input);
+        Assert.assertArrayEquals(new Integer[]{1, 2, 3, 4, 5}, input);
     }
 
     @Test
@@ -50,7 +50,7 @@ public class BubbleSortTest {
 
         bubbleSort.sort(input, new InteirosDecrescente());
 
-        assertArrayEquals(new Integer[]{5,4,3,2,1}, input);
+        Assert.assertArrayEquals(new Integer[]{5,4,3,2,1}, input);
 
     }
 

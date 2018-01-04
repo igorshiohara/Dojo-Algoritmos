@@ -6,6 +6,7 @@ import org.junit.Test;
 import java.util.Arrays;
 
 public class InsertionSortTest {
+
     @Test
     public void arrayVazio(){
 
