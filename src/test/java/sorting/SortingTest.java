@@ -23,7 +23,8 @@ public class SortingTest<T extends Comparable<T>> {
     private static final Collection<Integer[][]> TESTING_DATA = loadTestingData();
     private static final SortAlgorithm[] ALGORITHMS = {
             new BubbleSort(),
-            new InsertionSort()
+            new InsertionSort(),
+            new SelectionSort()
     };
 
     private final T[] input;
