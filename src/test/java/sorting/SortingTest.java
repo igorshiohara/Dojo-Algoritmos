@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
  * @param <T>
  */
 @RunWith(Parameterized.class)
-public class SortingTestSuite<T extends Comparable<T>> {
+public class SortingTest<T extends Comparable<T>> {
 
     private static final String TEST_DATA_FILE = "src/test/resources/sort-testdata.dat";
     private static final Collection<Integer[][]> TESTING_DATA = loadTestingData();
@@ -30,7 +30,7 @@ public class SortingTestSuite<T extends Comparable<T>> {
     private final T[] expected;
     private final SortAlgorithm algorithm;
 
-    public SortingTestSuite(T[] input, T[] expected, SortAlgorithm algorithm) {
+    public SortingTest(T[] input, T[] expected, SortAlgorithm algorithm) {
         this.input = input;
         this.expected = expected;
         this.algorithm = algorithm;
